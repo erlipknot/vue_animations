@@ -1,12 +1,15 @@
 const template = `
-<div>
-  <h1>{{ i18n.helloWorld }}</h1>
-</div>`;
+  <AddForm></AddForm>
+`;
 
 import ZDClient from '../services/ZDClient.js';
 import { state, getters } from '../store/store.js';
+import AddForm from '../components/AddForm.js';
 
 const App = {
+  components: {
+    AddForm
+  },
   template,
   computed: {
     state: () => state,

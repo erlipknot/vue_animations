@@ -1,1 +1,39 @@
 html { overflow-y: auto; }
+
+.add-form__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-txt__input {
+  width: 78%;
+}
+.c-btn {
+  padding: 0;
+  min-width: 4.5em;
+  margin-left: 5px;
+}
+
+.add-form__content {
+  margin-top: 10px;
+}
+.add-form__content--user-info {
+  list-style: none;
+  border: 1px solid #F8F9F9;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #F8F9F9;
+  margin-bottom: 3px;
+}
+.slide-up-enter {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.slide-up-enter-active {
+  transition: all 0.2s ease;
+}
+
+.slide-up-move {
+  transition: transform 0.8s ease-in;
+}
