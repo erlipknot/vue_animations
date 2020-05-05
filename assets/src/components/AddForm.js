@@ -19,7 +19,7 @@ const template = `
 
 import ZDClient from '../services/ZDClient.js';
 
-const App = {
+const Form = {
   template,
   data() {
     return {
@@ -37,11 +37,11 @@ const App = {
     }
   },
   mounted() {
-    ZDClient.resizeFrame(this.$el.scrollHeight);
+    ZDClient.resizeFrame(this.$root.$el.scrollHeight);
   },
   updated() {
-    ZDClient.resizeFrame(this.$el.scrollHeight);
+    ZDClient.resizeFrame(this.$root.$el.scrollHeight);
   },
 };
 
-export default App;
+export default Form;
